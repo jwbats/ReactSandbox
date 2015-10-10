@@ -1,0 +1,34 @@
+h1 {
+	text-align:center;
+}
+
+#divNumbers {
+	width:600px;
+	height:600px;
+	margin:auto;
+	padding:10px;
+	border:1px solid gray;
+	border-radius:5px;
+	box-sizing:border-box;
+}
+
+.clsNumber {
+	width:50px;
+	height:50px;
+	margin:10px 10px;
+	padding:15px;
+	border:1px solid gray;
+	border-radius:5px;
+	box-sizing:border-box;
+	float:left;
+	color:white;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
