@@ -29,11 +29,13 @@ var Number = React.createClass({
 var Numbers = React.createClass({
 	
 	render: function() {
+		console.log(this.props.stuff); // passing an object
+		
 		var numbers = [];
 		var initialNumber = 0;
 		
 		for (var i = 0; i < this.props.count; i++) {
-			numbers.push(<Number initialNumber={initialNumber} />);
+			numbers.push(<Number key={"number_" + i} initialNumber={initialNumber} />);
 			initialNumber += this.props.increment;
 		}
 		
@@ -43,6 +45,6 @@ var Numbers = React.createClass({
 });
 
 ReactDOM.render(
-	<Numbers count={64} increment={4} />,
+	<Numbers count={64} increment={4} stuff={{ a: 1, b :[1, 2], c: 'c'}} />,
 	document.getElementById('divNumbers')
 );
